@@ -64,13 +64,13 @@ integrity="sha384-Vkoo8x4CGs03+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href='{% url "index" %}'>Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Sobrenosotros.html">Nosotros</a>
+                <a class="nav-link" href='{% url "sobrenosotros" %}'>Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Contacto.html">Contacto</a>
+                <a class="nav-link" href='{% url "contacto" %}'>Contacto</a>
               </li>
               <li class="nav-item dropdown">
             </ul>
@@ -85,17 +85,17 @@ integrity="sha384-Vkoo8x4CGs03+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
 </header>
 
     <ul>
-        <button><a href="index.html"> Inicio </a> </button>
+        <button><a href='{% url "index" %}'> Inicio </a> </button>
 
-        <button><a href="servicios"> Servicios </a> </button>
+        <button><a href='{% url "servicios" %}'> Servicios </a> </button>
 
-        <button><a href="galeriapacientes.html"> Galeria Pacientes </a> </button>
+        <button><a href='{% url "galeriapacientes" %}'> Galeria Pacientes </a> </button>
 
-        <button><a href="MedicosVet.html"> Medicos Veterinarios </a> </button>
+        <button><a href='{% url "medicosvet" %}'> Medicos Veterinarios </a> </button>
 
-        <button><a href="contacto"> Contacto </a> </button>
+        <button><a href='{% url "contacto" %}'> Contacto </a> </button>
 
-        <button><a href="Sobrenosotros.html"> Sobre Nosotros </a> </button>
+        <button><a href='{% url "sobrenosotros" %}'> Sobre Nosotros </a> </button>
     </ul>
 
     
@@ -113,49 +113,49 @@ integrity="sha384-Vkoo8x4CGs03+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
 
             <div class="carousel-inner"> <!--Apertura del carrusel-->
                 <div class="carousel-item active">
-                    <a href="galeriapacientes.html"></a>
-                    <img src="veterinaria1.jpg" class="d-block" alt="..." width="1080px" height="480px">
+                    <a href='{% url "galeriapacientes" %}'></a>
+                    <img src='{% static "Image/veterinaria1.jpg" %}'class="d-block" alt="..." width="1080px" height="480px">
                     <div class="carousel-caption d-none d-md-block">
                     <h2>Galeria Pacientes</h2>
-                    <button> <a href="galeriapacientes.html">Presione aqui para ver la Galeria</a></button>
+                    <button> <a href='{% url "galeriapacientes" %}'>Presione aqui para ver la Galeria</a></button>
                     </div>
 
                 </div>
 
                 <div class="carousel-item">
-                    <a href="MedicosVet.html"></a>
-                    <img src="veterinaria4.jpg" class="d-block" alt="..." width="1080px" height="480px">
+                    <a href='{% url "medicosvet" %}'></a>
+                    <img src='{% static "Image/veterinaria4.jpg" %}' class="d-block" alt="..." width="1080px" height="480px">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Medicos Veterinarios</h2>
-                        <button><a href="MedicosVet.html"> Presione aqui para ver a nuestros profesionales</a></button>
+                        <button><a href='{% url "medicosvet" %}'> Presione aqui para ver a nuestros profesionales</a></button>
                     </div>
 
                 </div>
 
                 <div class="carousel-item">
-                    <a href="Servicios.html"></a>
-                    <img src="veterinaria5.jpg" class="d-block" alt="..." width="1080px" height="480px" >
+                    <a href='{% url "servicios" %}'></a>
+                    <img src='{% static "Image/veterinaria5.jpg" %}' class="d-block" alt="..." width="1080px" height="480px" >
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Servicios</h2>
-                        <button><a href="Servicios.html"> Presione aqui para ver a nuestros servicios</a></button>
+                        <button><a href='{% url "servicios" %}'> Presione aqui para ver a nuestros servicios</a></button>
                     </div>
                 </div>
 
                 <div class="carousel-item">
-                    <a href="Contacto.html"></a>
-                    <img src="veterinaria2.jpg" class="d-block" alt="..." width="1080px" height="480px">
+                    <a href='{% url "contacto" %}'></a>
+                    <img src='{% static "Image/veterinaria2.jpg" %}' class="d-block" alt="..." width="1080px" height="480px">
                     <div class="carousel-caption d-none d-md-block">
                         <h2>Contacto</h2>
-                        <button><a href="Contacto.html"> Presione aqui para ver nuestro contacto</a></button>
+                        <button><a href='{% url "contacto" %}'> Presione aqui para ver nuestro contacto</a></button>
                     </div>
                     </div>
 
                     <div class="carousel-item">
-                        <a href="Sobrenosotros.html"></a>
-                        <img src="vet7.jpg" class="d-block" alt="..." width="1080px" height="480px">
+                        <a href='{% url "sobrenosotros" %}'></a>
+                        <img src='{% static "Image/vet7.jpg" %}' class="d-block" alt="..." width="1080px" height="480px">
                         <div class="carousel-caption d-none d-md-block">
                             <h2>Sobre Nosotros</h2>
-                            <button><a href="Sobrenosotros.html"> Presione aqui para saber mas de nosotros</a></button>
+                            <button><a href='{% url "sobrenosotros" %}'> Presione aqui para saber mas de nosotros</a></button>
                         </div>
 
                     </div>
@@ -196,9 +196,9 @@ integrity="sha384-Vkoo8x4CGs03+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9If
 
 
 <div id="..." class="d-flex justify-content-center">
-  <a title="Facebook" href="#"><img src="LogoFace.png" alt="Facebook" class="img-fluid"/></a>
-  <a title="whatsapp" href="#"><img src="whatsapplogo.png" alt="Whatsapp" class="img-fluid"/></a>
-  <a title="instagram" href="#"><img src="instagramlogo.png" alt="instagram" class="img-fluid"/></a>
+  <a title="Facebook" href="#"><img src='{% static "Image/LogoFace.jpg" %}' alt="Facebook" class="img-fluid"/></a>
+  <a title="whatsapp" href="#"><img src='{% static "Image/whatsapplogo.jpg" %}' alt="Whatsapp" class="img-fluid"/></a>
+  <a title="instagram" href="#"><img src='{% static "Image/instagramlogojpg" %}' alt="instagram" class="img-fluid"/></a>
 </div>
 <div class="d-flex justify-content-center">
   <p>Veterinaria Animal Lovers </p>

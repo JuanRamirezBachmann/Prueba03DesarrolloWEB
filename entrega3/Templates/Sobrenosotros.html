@@ -47,7 +47,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><a title="Logo" href="index.html"><img src="LogoPagina.jpg" alt="logo" class="img-fluid" style="width: 100px;"/></a></a>
+          <a class="navbar-brand" href="#"><a title="Logo" href='{% url "index" %}'><img src='{% static "Image/LogoPagina.jpg" %}' alt="logo" class="img-fluid" style="width: 100px;"/></a></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -62,13 +62,13 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                <a class="nav-link active" aria-current="page" href='{% url "index" %}'>Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Sobrenosotros.html">Nosotros</a>
+                <a class="nav-link" href='{% url "sobrenosotros" %}'>Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Contacto.html">Contacto</a>
+                <a class="nav-link" href='{% url "contacto" %}'>Contacto</a>
               </li>
               <li class="nav-item dropdown">
             </ul>
@@ -83,17 +83,17 @@
     </header>
 
     <ul>
-        <button><a href="index.html"> Inicio </a> </button>
-        
-        <button><a href="Servicios.html"> Servicios </a> </button>
-        
-        <button><a href="galeriapacientes.html"> Galeria Pacientes </a> </button>
-        
-        <button><a href="MedicosVet.html"> Medicos Veterinarios </a> </button>
-        
-        <button><a href="Contacto.html"> Contacto </a> </button>
-        
-        <button><a href="Sobrenosotros.html"> Sobre Nosotros </a> </button>
+      <button><a href='{% url "index" %}'> Inicio </a> </button>
+
+      <button><a href='{% url "servicios" %}'> Servicios </a> </button>
+
+      <button><a href='{% url "galeriapacientes" %}'> Galeria Pacientes </a> </button>
+
+      <button><a href='{% url "medicosvet" %}'> Medicos Veterinarios </a> </button>
+
+      <button><a href='{% url "contacto" %}'> Contacto </a> </button>
+
+      <button><a href='{% url "sobrenosotros" %}'> Sobre Nosotros </a> </button>
     </ul>
 
 
@@ -102,7 +102,7 @@
     </div>
     <div class="row">
       <div class="col-6">
-        <img src="vet6.png" alt="Sobrenosotros">
+        <img src='{% static "Image/vet6.png" %}' alt="Sobrenosotros">
       </div>
       <div class="col-6" style="background-color: lightgreen;">
       
