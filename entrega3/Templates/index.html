@@ -1,0 +1,211 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+<meta charset="utf-8">
+
+<title> Veterinaria Animal Lovers </title>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Diseño responsivo -->
+
+<meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Compatibilidad con navegadores web -->
+
+<title>Pagina con Bootstrap</title>
+<link type="text/css" rel="stylesheet" href='{% static "css/decoracion.css" %}' />
+
+
+<!--Llamada a la hoja de estilo de Bootstrap -->
+
+<link rel="stylesheet" href="stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+
+integrity="sha384-Vkoo8x4CGs03+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+<!-- Llamada a las librerías jQuery, Popper y Bootstrap -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src='https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js'></script>
+
+<!--Google maps-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+</head>
+
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><a title="Logo" href='{% url "index" %}'><img src='{% static "Image/LogoPagina.jpg" %}' alt="logo" class="img-fluid" style="width: 100px;"/></a></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Sobrenosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+
+<header>
+    <h1> Veterinaria Animal Lovers </h1>
+</header>
+
+    <ul>
+        <button><a href="index.html"> Inicio </a> </button>
+
+        <button><a href="servicios"> Servicios </a> </button>
+
+        <button><a href="galeriapacientes.html"> Galeria Pacientes </a> </button>
+
+        <button><a href="MedicosVet.html"> Medicos Veterinarios </a> </button>
+
+        <button><a href="contacto"> Contacto </a> </button>
+
+        <button><a href="Sobrenosotros.html"> Sobre Nosotros </a> </button>
+    </ul>
+
+    
+    <div class="carousel-inner">
+
+        <div id="CarruselVeterinaria" class="carousel slide" data-ride="carousel">   
+            <ol class="carousel-indicators">
+                <!--Botones para irse a una imagen específica dentro del carrusel-->
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+
+            <div class="carousel-inner"> <!--Apertura del carrusel-->
+                <div class="carousel-item active">
+                    <a href="galeriapacientes.html"></a>
+                    <img src="veterinaria1.jpg" class="d-block" alt="..." width="1080px" height="480px">
+                    <div class="carousel-caption d-none d-md-block">
+                    <h2>Galeria Pacientes</h2>
+                    <button> <a href="galeriapacientes.html">Presione aqui para ver la Galeria</a></button>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+                    <a href="MedicosVet.html"></a>
+                    <img src="veterinaria4.jpg" class="d-block" alt="..." width="1080px" height="480px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Medicos Veterinarios</h2>
+                        <button><a href="MedicosVet.html"> Presione aqui para ver a nuestros profesionales</a></button>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+                    <a href="Servicios.html"></a>
+                    <img src="veterinaria5.jpg" class="d-block" alt="..." width="1080px" height="480px" >
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Servicios</h2>
+                        <button><a href="Servicios.html"> Presione aqui para ver a nuestros servicios</a></button>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <a href="Contacto.html"></a>
+                    <img src="veterinaria2.jpg" class="d-block" alt="..." width="1080px" height="480px">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Contacto</h2>
+                        <button><a href="Contacto.html"> Presione aqui para ver nuestro contacto</a></button>
+                    </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <a href="Sobrenosotros.html"></a>
+                        <img src="vet7.jpg" class="d-block" alt="..." width="1080px" height="480px">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2>Sobre Nosotros</h2>
+                            <button><a href="Sobrenosotros.html"> Presione aqui para saber mas de nosotros</a></button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+    <div class="container marketing">
+        <div class="row">
+          <section id="Contenido">
+
+          <h2>Bienvenido a la veterinaria Animal Lovers!</h2>
+          <p>Donde nos encargamos de darlo todo lo que quieras a tus mascotas!</p>
+          <br>
+          <p>Ya sea tratamiento, comidas, jugetes, baños y todo lo que puedas desear!</p>
+          <br>
+          <p>Nos encargaremos de que tu mascota salga mas feliz que nunca </p>
+      </section>
+      <br>
+      <br>
+      <h3>Ven a vernos! te daremos el clima para que te puedas preparar para el viaje</h3>
+        </div>
+<div id="m-booked-bl-simple-27101"> <div class="booked-wzs-160-110 weather-customize" style="background-color:#137AE9;width:160px;" id="width1"> <div class="booked-wzs-160-110_in"> <div class="booked-wzs-160-data"> <div class="booked-wzs-160-left-img wrz-03"></div> <div class="booked-wzs-160-right"> <div class="booked-wzs-day-deck"> <div class="booked-wzs-day-val"> <div class="booked-wzs-day-number"><span class="plus">+</span>16</div> <div class="booked-wzs-day-dergee"> <div class="booked-wzs-day-dergee-val">&deg;</div> <div class="booked-wzs-day-dergee-name">C</div> </div> </div> <div class="booked-wzs-day"> <div class="booked-wzs-day-d"><span class="plus">+</span>18&deg;</div> <div class="booked-wzs-day-n"><span class="plus">+</span>13&deg;</div> </div> </div> <div class="booked-wzs-160-info"> <div class="booked-wzs-160-city">Santiago</div> <div class="booked-wzs-160-date">Wednesday, 09</div> </div> </div> </div> <div class="booked-wzs-center"><span class="booked-wzs-bottom-l"> See 7-Day Forecast</span></div> </a> </div> </div> </div><script type="text/javascript"> var css_file=document.createElement("link"); var widgetUrl = location.href; css_file.setAttribute("rel","stylesheet"); css_file.setAttribute("type","text/css"); css_file.setAttribute("href",'https://s.bookcdn.com/css/w/booked-wzs-widget-160.css?v=0.0.1'); document.getElementsByTagName("head")[0].appendChild(css_file); function setWidgetData_27101(data) { if(typeof(data) != 'undefined' && data.results.length > 0) { for(var i = 0; i < data.results.length; ++i) { var objMainBlock = document.getElementById('m-booked-bl-simple-27101'); if(objMainBlock !== null) { var copyBlock = document.getElementById('m-bookew-weather-copy-'+data.results[i].widget_type); objMainBlock.innerHTML = data.results[i].html_code; if(copyBlock !== null) objMainBlock.appendChild(copyBlock); } } } else { alert('data=undefined||data.results is empty'); } } var widgetSrc = "https://widgets.booked.net/weather/info?action=get_weather_info;ver=7;cityID=2114;type=1;scode=124;ltid=3457;domid=w209;anc_id=98736;countday=undefined;cmetric=1;wlangID=1;color=137AE9;wwidth=160;header_color=ffffff;text_color=333333;link_color=08488D;border_form=1;footer_color=ffffff;footer_text_color=333333;transparent=0;v=0.0.1";widgetSrc += ';ref=' + widgetUrl;widgetSrc += ';rand_id=27101';var weatherBookedScript = document.createElement("script"); weatherBookedScript.setAttribute("type", "text/javascript"); weatherBookedScript.src = widgetSrc; document.body.appendChild(weatherBookedScript) </script><!-- weather widget end -->
+    </div>
+<div>
+      
+
+       
+
+<hr class="featuredivider"> <!-- DIVISOR -->
+
+
+<div id="..." class="d-flex justify-content-center">
+  <a title="Facebook" href="#"><img src="LogoFace.png" alt="Facebook" class="img-fluid"/></a>
+  <a title="whatsapp" href="#"><img src="whatsapplogo.png" alt="Whatsapp" class="img-fluid"/></a>
+  <a title="instagram" href="#"><img src="instagramlogo.png" alt="instagram" class="img-fluid"/></a>
+</div>
+<div class="d-flex justify-content-center">
+  <p>Veterinaria Animal Lovers </p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d106515.64347149467!2d-70.65763851970839!3d-33.459365417345815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps!5e0!3m2!1ses!2scl!4v1623255563844!5m2!1ses!2scl" width="1400px" height="50%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+</div>
+
+          
+</body>
+</html>
