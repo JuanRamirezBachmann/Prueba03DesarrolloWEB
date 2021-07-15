@@ -78,15 +78,12 @@ WSGI_APPLICATION = 'entrega3.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.xe',
-        'NAME': '127.0.0.1.1521/xe',
-        'USER': 'C##usuario',
-        'PASSWORD': 'usuario',
-        'TEST': {
-            'USER': 'default_test',
-            'TBLSPACE': 'default_test_tbls',
-            'TBLSPACE_TMP': 'default_test_tbls_tmp',
-        },
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'entrega3',
+        'USER': 'root',
+        'PASSWORD': 'kirito123',
+        'HOST': '127.0.0.1',
+        'PORT': '3306',
     },
 }
 
