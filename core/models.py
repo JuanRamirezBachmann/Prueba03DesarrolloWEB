@@ -7,13 +7,11 @@ class Clientes(models.Model):
     detalles = models.CharField(max_length= 200, verbose_name= 'Detalles del animal')
 
     class Meta:
-        managed = False
-        db_table = 'Clientes'
+        db_table = 'clientes'
 
 class Dadosdebaja(models.Model):
     idBaja = models.IntegerField(primary_key=True, verbose_name = 'Id de Baja')
     Cliente = models.CharField(max_length= 200, verbose_name = 'Razon Baja')
 
     class Meta:
-        managed = False
-        db_table = 'Dadosdebaja'
+        db_table = 'dadosdebaja'

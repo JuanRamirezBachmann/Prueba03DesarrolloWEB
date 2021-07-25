@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from . import views
+from django.conf.urls import include, url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,6 +25,7 @@ urlpatterns = [
     path('contacto', views.contacto, name="contacto"),
     path('galeriapacientes', views.galeriapacientes, name="galeriapacientes"),
     path('medicosvet', views.medicosvet, name="medicosvet"),
-    path('sobrenosotros', views.sobrenosotros, name="sobrenosotros")
+    path('sobrenosotros', views.sobrenosotros, name="sobrenosotros"),
+    path('api/', include('entrega3.api.urls')),
 ]
 
